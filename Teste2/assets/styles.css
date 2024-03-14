@@ -1,0 +1,399 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    /* border: 1px solid red */
+}
+
+body {
+    background-color: #fffdfa;
+    font-family: "Quicksand";
+
+}
+
+strong {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #561717;
+    font-weight: 700;
+}
+
+
+
+/* HEADER */
+
+
+.header {
+    height: 110px;
+    background-color: #fffaee;
+    /* border: 1px solid red; */
+    padding: 20px 15px 10px;
+
+}
+
+.headercentral {
+    display: flex;
+    /* border: 1px solid green; */
+    width: 900px;
+    min-width: 10px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    /* imagem logo  */
+    .headerlogo {
+
+    }
+
+    .hpc {
+        /* border: 1px solid red; */
+        margin: 0px;
+        width: 430px;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 5.5%;
+    }
+        /* 3 elementos */
+        ul li {
+        font-family: "Domine";
+        list-style: none;
+        font-size: 18px;
+        
+            
+            }
+            /* links */
+            ul > li > a {
+                color: #9c8034;
+                text-decoration: none;
+            }
+
+
+
+                /* BACKGROUND - 1 */
+
+/* (div da foto) */
+.fotodeFundo {
+
+}
+
+.fotodeFundo img {
+    width: 100%;
+
+}
+
+
+
+
+                /* SEÇÃO DA HISTÓRIA */
+
+
+.secaoHistoria {
+    background-color: #193a20;
+    color: #fff;
+    margin-top: -4px;
+    display: flex;
+    padding: 0px 0px 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.historiaTexto {
+    width: 742px;
+}
+
+        /* Título */
+        .historiaH2 {
+            position: a;
+            padding-top: 70px;
+            padding-bottom: 30px;
+            font-size: 28px;
+            text-align: center;
+            font-family: "Domine", serif;
+            color: #9c8034;
+            font-weight: 300;
+        }
+
+        /* Parágrafos */
+        .historiaTexto p {
+            position: relative;
+            margin: 19px 0px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+
+                /* IMAGEM SLIDE */
+
+
+
+/* Div da que roda */
+.slide {
+
+}
+
+    /* Imagem que rotaciona */
+    .imgSlide {
+
+    }
+
+
+
+                /* SEÇÃO DA PRODUÇÃO */
+
+
+.secaoProducao {
+    margin-top: -4px;
+    display: flex;
+    padding: 0px 0px 70px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+
+    .secaoFundo1 {
+        position: absolute;
+        width: 450px;
+        left: -1%;
+        top: 156%;
+        transform: rotate(160deg);
+    }
+
+    .secaoFundo2 {
+        position: absolute;
+        width: 450px;
+        right: 5%;
+        top: 176%;
+    }
+
+                
+.producaoTexto {
+    width: 770px;
+}
+                
+    /* Título */
+    .producaoH2 {
+        position: a;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        font-size: 28px;
+        text-align: center;
+        font-family: "Domine", serif;
+        color: #9c8034;
+        font-weight: 300;
+    }
+                    
+        /* Parágrafos */
+        .producaoTexto p {
+            position: relative;
+            margin: 17px 0px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #561717;
+        }
+
+            /* logos */
+            .producaoLogos1 {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                max-width: 780px;
+                margin: auto;
+                background-color: #ffffff;
+                padding-bottom: 40px;
+            }
+
+            .producaoLogo {
+            }
+
+
+
+                /* SEÇÃO DE CONTATO */
+
+
+.secaoContato {
+    background-color: #41311a;
+    color: #9c8034;
+    display: flex;
+    justify-content: center;
+    padding: 0px 250px 70px;
+    font-family: "Domine", serif;
+}
+
+.contatoContainer {
+    height: 100%;
+    width: 100%;
+    max-width: 750px;
+    margin-top: 40px;
+    min-width: 220px;
+}
+
+.contatoCentralizador {
+    
+}
+
+    /* info */
+    .contatoTitulo {
+        font-size: 28px;
+        border-bottom: 1px solid white;
+        padding-bottom: 15px;
+        border-color: #9c8034;
+    }
+
+    .contato_regiao {
+        padding: 15px 0px 15px 0px;
+        font-size: 25px;
+        color: #eadfce;
+
+    }
+
+    .contato_regiaoDescricao {
+        margin-top: -11px;
+        margin-bottom: 20px;
+        color: #eadfce;
+
+    }
+
+    .contato_dados {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 70px;
+        color: #eadfce;
+        font-family: "Manrope", sans-serif;
+        position: abs;
+    }
+
+            .contato_numero {
+
+            }
+
+            .contato_mail {
+                
+            }
+
+            .contato_fax {
+                transform: translateX(10px);
+            }
+
+            .contato_localizacao1 {
+                transform: translateX(-75px);
+            }
+    
+
+
+            /* MINI ÍCONES!! */
+
+
+
+.logo_numero {
+    /* border: 1px solid red; */
+    height: 20px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-image: url(./images/cellphone.svg);
+    position: absolute;
+    background-size: contain;
+    transform: translateX(-25px);
+    text-align: center;
+}
+
+.logo_mail1 {
+    height: 20px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-image: url(./images/mail.svg);
+    position: absolute;
+    background-size: contain;
+    display: flex;
+    /* border: 1px solid red; */
+    transform: translateX(250px);
+    text-align: center;
+}
+
+.logo_loc {
+    height: 20px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-image: url(./images/location.svg);
+    position: absolute;
+    background-size: contain;
+    display: flex;
+    /* border: 1px solid red; */
+    transform: translateX(569px);
+    text-align: center;
+}
+
+.logo_telefone {
+    height: 20px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-image: url(./images/phone.svg);
+    position: absolute;
+    background-size: contain;
+    transform: translateX(-25px);
+    text-align: center;
+}
+
+.logo_fax {
+    height: 20px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-image: url(./images/fax.svg);
+    position: absolute;
+    background-size: contain;
+    display: flex;
+    /* border: 1px solid red; */
+    transform: translateX(278px);
+    text-align: center;
+}
+
+.logo_loc2 {
+    height: 20px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-image: url(./images/location.svg);
+    position: absolute;
+    background-size: contain;
+    display: flex;
+    /* border: 1px solid red; */
+    transform: translateX(570px);
+    text-align: center;
+}
+
+
+
+
+    /* logo final */
+    .logoFinal {
+        display: flex;
+        justify-content: center;
+        height: 260px;
+        margin-top: 60px;
+    }
+
+        .logo_final {
+            height: 190px;
+        }
+
+    .footerDireitos {
+        font-size: 15px;
+        text-align: center;
+        font-family: "Manrope", sans-serif;
+        color: #a3883f;
+    }
+
+    .last_strong {
+        font-weight: 800;
+    }
+
