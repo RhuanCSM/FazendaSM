@@ -104,7 +104,19 @@ strong {
 }
 
 .historiaTexto {
-    width: 742px;
+    width: 550px;
+}
+
+@media only screen and (max-width: 500px) {
+    .historiaTexto {
+        width: 300px;        
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .historiaTexto {
+        width: 742px;        
+    }
 }
 
         /* Título */
@@ -136,14 +148,31 @@ strong {
 
 /* Div da que roda */
 .slide {
-
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-    /* Imagem que rotaciona */
-    .imgSlide {
+.slider {
+    display: inline-block;
+}
 
+/* Imagem que rotaciona */
+.slider img {
+    animation: 30s slide infinite linear;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
     }
 
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 
                 /* SEÇÃO DA PRODUÇÃO */
