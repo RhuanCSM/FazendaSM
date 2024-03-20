@@ -3,12 +3,12 @@
     padding: 0px;
     scroll-behavior: smooth;
     /* border: 1px solid red */
+    /* min-width: 370px; */
 }
 
 body {
     background-color: #fffdfa;
     font-family: "Quicksand";
-
 }
 
 strong {
@@ -29,6 +29,7 @@ strong {
     background-color: #fffaee;
     /* border: 1px solid red; */
     padding: 20px 15px 10px;
+    min-width: 435px;
 
 }
 
@@ -51,6 +52,8 @@ strong {
         margin: 0px;
         width: 430px;
         margin-top: 30px;
+    min-width: 370px;
+
     }
 
     ul {
@@ -79,12 +82,12 @@ strong {
 
 /* (div da foto) */
 .fotodeFundo {
-
+    
 }
 
 .fotodeFundo img {
     width: 100%;
-
+    min-width: 435px;
 }
 
 
@@ -101,6 +104,7 @@ strong {
     padding: 0px 0px 70px;
     justify-content: center;
     align-items: center;
+    min-width: 435px;
 }
 
 .historiaTexto {
@@ -139,10 +143,14 @@ strong {
 .slide {
     white-space: nowrap;
     overflow: hidden;
+    min-width: 435px;
+
 }
 
 .slider {
     display: inline-block;
+    min-width: 435px;
+
 }
 
 /* Imagem que rotaciona */
@@ -150,6 +158,8 @@ strong {
     animation: 35s slide infinite linear;
     margin: 0px;
     padding: 0px;
+    min-width: 435px;
+
 }
 
 
@@ -176,6 +186,8 @@ strong {
     background-repeat: no-repeat;
     background-color: #ffffff;
     position: relative;
+    min-width: 435px;
+
 }
 
     .secaoFundo1 {
@@ -235,6 +247,8 @@ strong {
                 margin: auto;
                 background-color: #ffffff;
                 padding-bottom: 40px;
+                min-width: 435px;
+
             }
 
             .producaoLogo {
@@ -250,6 +264,7 @@ strong {
     color: #9c8034;
     display: flex;
     justify-content: center;
+    min-width: 435px;
 
     font-family: "Domine", serif;
 }
@@ -289,27 +304,86 @@ strong {
 
     .contato_dados {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         height: 70px;
         color: #eadfce;
         font-family: "Manrope", sans-serif;
+        font-size: 13px;
+        font-weight: 300;
     }
 
+            .contato_numero::before {
+                content: '';
+                background-image: url('./images/cellphone.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 20px;
+                display: inline-block;
+                transform: translateY(4px);
+            }
             .contato_numero {
-
+                position: relative;
+                padding: 0;
+                width: 25;
             }
 
+            .contato_mail::before {
+                content: '';
+                background-image: url('./images/mail.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 18px;
+                display: inline-block;
+                transform: translateY(4px);
+            }
             .contato_mail {
                 
             }
 
-            .contato_fax {
-                /* transform: translateX(10px); */
+            .contato_fax::before {
+                content: '';
+                background-image: url('./images/fax.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 20px;
+                display: inline-block;
+                transform: translateY(5px);
             }
 
-            .contato_localizacao1 {
-                /* transform: translateX(-75px); */
+            .contato_localizacao1::before {
+                content: '';
+                background-image: url('./images/location.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 20px;
+                display: inline-block;
+                transform: translateY(6px);
+            }
+            
+            .contato_telefone::before {
+                content: '';
+                background-image: url('./images/phone.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 20px;
+                display: inline-block;
+                transform: translateY(4px);
+            }
+            .contato_localizacao::before {
+                content: '';
+                background-image: url('./images/location.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 20px;
+                display: inline-block;
+                transform: translateY(6px);
             }
     
 
@@ -454,9 +528,15 @@ strong {
             transform: translateX(-30px);
     
         }
+        
     }
 
     @media (width <= 719px) {
+        
+        body {
+            min-width: 100%;
+        }
+        
         .historiaTexto {
             width: 280px;
         }
@@ -483,16 +563,17 @@ strong {
         }
         .contato_dados {
             display: block;
-            text-align: center;
+            text-align: left;
         }
+
         .contato_regiaoDescricao {
             display: block;
-            text-align: center;
+            text-align: left;
             margin-top: 2px;
         }
         .contato_regiao {
             margin-top: 15px;
-            text-align: center;
+            text-align: left;
         }
         .contatoTitulo {
             text-align: center;
@@ -509,4 +590,13 @@ strong {
             width: 0;
         }
 
+        .logoFinal {
+            margin: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footerDireitos {
+            margin-top: 0;
+        }
     }
