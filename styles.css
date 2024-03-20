@@ -20,6 +20,19 @@ strong {
 }
 
 
+html::-webkit-scrollbar {
+    width: 18px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #41311a;
+    border-left: 4px solid #978040;
+    border-right: 4px solid #978040;
+}
+
+html::-webkit-scrollbar-track {
+    background: #978040;
+}
 
 /* HEADER */
 
@@ -29,7 +42,7 @@ strong {
     background-color: #fffaee;
     /* border: 1px solid red; */
     padding: 20px 15px 10px;
-    min-width: 435px;
+    min-width: 350px;
 
 }
 
@@ -52,7 +65,7 @@ strong {
         margin: 0px;
         width: 430px;
         margin-top: 30px;
-    min-width: 370px;
+        min-width: 300px;
 
     }
 
@@ -87,7 +100,7 @@ strong {
 
 .fotodeFundo img {
     width: 100%;
-    min-width: 435px;
+    min-width: 350px;
 }
 
 
@@ -104,18 +117,25 @@ strong {
     padding: 0px 0px 70px;
     justify-content: center;
     align-items: center;
-    min-width: 435px;
+    min-width: 350px;
 }
 
 .historiaTexto {
     width: 742px;
+    border: 1px solid rgba(156, 128, 52, 0.45);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-radius: 30px;
 }
+
 
 
         /* Título */
         .historiaH2 {
             position: a;
-            padding-top: 70px;
+            padding-top: 30px;
             padding-bottom: 30px;
             font-size: 28px;
             text-align: center;
@@ -143,14 +163,13 @@ strong {
 .slide {
     white-space: nowrap;
     overflow: hidden;
-    min-width: 435px;
-
+    min-width: 350px;
+    border: 1px solid rgba(156, 128, 52, 0.45);
 }
 
 .slider {
     display: inline-block;
-    min-width: 435px;
-
+    min-width: 350px;
 }
 
 /* Imagem que rotaciona */
@@ -158,8 +177,7 @@ strong {
     animation: 35s slide infinite linear;
     margin: 0px;
     padding: 0px;
-    min-width: 435px;
-
+    min-width: 350px;
 }
 
 
@@ -186,7 +204,7 @@ strong {
     background-repeat: no-repeat;
     background-color: #ffffff;
     position: relative;
-    min-width: 435px;
+    min-width: 350px;
 
 }
 
@@ -211,14 +229,18 @@ strong {
                 
 .producaoTexto {
     width: 742px;
-    /* position: relative; */
-
+    border: 2px solid rgba(222, 171, 30, 0.1);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-radius: 30px;
 }
                 
     /* Título */
     .producaoH2 {
         position: a;
-        padding-top: 70px;
+        padding-top: 30px;
         padding-bottom: 30px;
         font-size: 28px;
         text-align: center;
@@ -247,7 +269,7 @@ strong {
                 margin: auto;
                 background-color: #ffffff;
                 padding-bottom: 40px;
-                min-width: 435px;
+                min-width: 350px;
 
             }
 
@@ -264,7 +286,7 @@ strong {
     color: #9c8034;
     display: flex;
     justify-content: center;
-    min-width: 435px;
+    min-width: 350px;
 
     font-family: "Domine", serif;
 }
@@ -507,10 +529,17 @@ strong {
             margin-top: 20px;
         }
         .hpc {
-            background-color: #eadfce;
+            background-color: rgba(234, 223, 206, 0.85);
             display: flex;
             padding: 5px 0px;
+            border: 2px solid rgb(204, 162, 48, 0.4);
+            border-radius: 15px;;
         }
+
+        .hpc a {
+            font-weight: 600;
+        }
+
         .contatoCentralizador {
             width: 500px;
             justify-content: center;
@@ -538,10 +567,12 @@ strong {
         }
         
         .historiaTexto {
-            width: 280px;
+            width: 300px;
+            border: none;
         }
         .producaoTexto {
-            width: 280px;
+            border: none;
+            width: 300px;
         }
         .headercentral {
             width: 280px;
@@ -553,10 +584,11 @@ strong {
             width: 110%;
         }
         .hpc {
-            background-color: #eadfce;
+            background-color: rgba(234, 223, 206, 0.85);
             display: flex;
             padding: 5px 0px;
-            margin-top: 30px;
+            border: 2px solid rgb(204, 162, 48, 0.4);
+            border-radius: 15px;;
         }
         .contatoCentralizador {
             width: 280px;
@@ -599,4 +631,5 @@ strong {
         .footerDireitos {
             margin-top: 0;
         }
+
     }
