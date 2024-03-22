@@ -19,21 +19,6 @@ strong {
     font-weight: 700;
 }
 
-
-html::-webkit-scrollbar {
-    width: 18px;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: #41311a;
-    border-left: 4px solid #978040;
-    border-right: 4px solid #978040;
-}
-
-html::-webkit-scrollbar-track {
-    background: #978040;
-}
-
 /* HEADER */
 
 
